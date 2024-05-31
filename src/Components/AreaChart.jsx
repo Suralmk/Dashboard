@@ -1,7 +1,7 @@
 // src/AreaChart.js
 import React from 'react'
 import { Line } from 'react-chartjs-2'
-import { registerables } from 'chart.js'
+import { registerables, Chart } from 'chart.js'
 
 Chart.register(...registerables)
 

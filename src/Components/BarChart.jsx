@@ -1,6 +1,7 @@
 import React from 'react'
 import { Bar } from 'react-chartjs-2'
-
+import { registerables, Chart } from 'chart.js'
+Chart.register(...registerables)
 const BarChart = ({ labels, data, label }) => {
   const chartData = {
     labels: labels,

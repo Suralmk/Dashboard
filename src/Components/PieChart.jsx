@@ -1,7 +1,9 @@
 // src/AreaChart.js
 import React from 'react'
 import { Pie } from 'react-chartjs-2'
+import { registerables, Chart } from 'chart.js'
 
+Chart.register(...registerables)
 const PieChart = ({ labels, title, data }) => {
   const chartdata = {
     labels: labels,

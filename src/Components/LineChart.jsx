@@ -1,7 +1,8 @@
 // src/AreaChart.js
 import React from 'react'
 import { Line } from 'react-chartjs-2'
-
+import { registerables, Chart } from 'chart.js'
+Chart.register(...registerables)
 const LineChart = ({ labels, title, data, label }) => {
   const chartdata = {
     labels: labels,
