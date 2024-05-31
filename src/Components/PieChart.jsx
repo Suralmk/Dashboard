@@ -45,6 +45,8 @@ const PieChart = ({ labels, title, data }) => {
     },
     scales: {
       x: {
+        type: 'category',
+        labels: labels,
         grid: {
           display: false,
           drawBorder: false

@@ -41,6 +41,22 @@ const DoughnutChart = ({ label, data, labels }) => {
       display: true,
       text: 'title'
     },
+    scales: {
+      x: {
+        type: 'category',
+        labels: labels,
+        grid: {
+          display: false,
+          drawBorder: false
+        }
+      },
+      y: {
+        grid: {
+          display: false,
+          drawBorder: false
+        }
+      }
+    },
     plugins: {
       legend: {
         position: 'bottom',

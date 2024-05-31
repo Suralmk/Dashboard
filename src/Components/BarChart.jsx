@@ -32,6 +32,8 @@ const BarChart = ({ labels, data, label }) => {
     },
     scales: {
       x: {
+        type: 'category',
+        labels: labels,
         grid: {
           display: false,
           drawBorder: false

@@ -1,6 +1,9 @@
 // src/AreaChart.js
 import React from 'react'
 import { Line } from 'react-chartjs-2'
+import { registerables } from 'chart.js'
+
+Chart.register(...registerables)
 
 const AreaChart = ({ labels, data, title }) => {
   const chartdata = {
@@ -46,6 +49,8 @@ const AreaChart = ({ labels, data, title }) => {
     },
     scales: {
       x: {
+        type: 'category',
+        labels: labels,
         grid: {
           display: false,
           drawBorder: false
