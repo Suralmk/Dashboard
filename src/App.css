@@ -1,38 +1,81 @@
-.App {
-  text-align: center;
+
+input {
+  border: 1px solid #a3a5ab;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+input:focus {
+  border: 1px solid #2e5df4;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #2a2a2e ;
+}
+
+input[type=number]{
+    -moz-appearance: textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[value=""]::-webkit-datetime-edit{ color: transparent; }
+input:focus::-webkit-datetime-edit{ color: #ffffff; }
+
+
+@media screen and (max-width : 800px) {
+  * {
+      font-family:Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 18px;
   }
 }
+.dashboard {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+}
+.dashboard_container {
+  grid-auto-rows: minmax(180px, auto);
+}
+.outlet::-webkit-scrollbar {
+  display: none;
+}
+
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+th, tr {
+  display: flex;
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+td {
+  padding: 10px;
+  background-color: white;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.table-header-cell {
+  background-color: rgba(46,93,244,0.3606617647058824);
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  td {
+    display: block;
   }
 }
