@@ -14,8 +14,8 @@ Frontend Deployed on verce and backend API is deployed on Pythonanywhere
 
 ## Link
 
-- [@Admin Dashboard](https://www.github.com/octokatherine)
+- [@Admin Dashboard](https://dashboard-woad-eta.vercel.app/)
 
 ## Author
 
-- Surafel Melaku [@Suralmk](https://www.github.com/octokatherine)
+- Surafel Melaku [@Suralmk](https://www.github.com/Suralmk)
