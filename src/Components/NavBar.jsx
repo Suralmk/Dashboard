@@ -40,25 +40,12 @@ const NavBar = () => {
 
   const [profile, setProfile] = useState(false)
   return (
-    <div className='h-full w-full p-5 bg-main-gray flex'>
+    <div className='h-full w-full p-5 bg-main-gray flex smm:p-2 sm:p-2 md:3 lg:p-4'>
       <div className='flex w-full justify-between items-center'>
         <h1 className='text-[25px] text-main-blue font-bold'>Dashboard</h1>
 
         <div className='flex items-center gap-5'>
-          {user.username === 'sura' ? (
-            <div>
-              <Button
-                action={handleDataAdding}
-                text='Add Data'
-                bg='rgba(46,93,244,0.3606617647058824)'
-                color='#ffffff'
-              />
-            </div>
-          ) : (
-            <></>
-          )}
-
-          <div className='flex items-center h-[50px] w-max relative gap-3 bg-white rounded-lg py-1 px-2'>
+          <div className='flex items-center h-[50px] w-max relative gap-3 bg-white rounded-lg py-1 px-2 '>
             <img
               src={images.person1}
               alt=''

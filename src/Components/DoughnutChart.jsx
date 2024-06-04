@@ -43,8 +43,6 @@ const DoughnutChart = ({ label, data, labels }) => {
     },
     scales: {
       x: {
-        type: 'category',
-        labels: labels,
         grid: {
           display: false,
           drawBorder: false
@@ -65,7 +63,7 @@ const DoughnutChart = ({ label, data, labels }) => {
     }
   }
   return (
-    <div style={{ height: 170, width: 170 }}>
+    <div style={{ height: 200, width: 200 }}>
       <Doughnut data={chartData} options={options} />
     </div>
   )

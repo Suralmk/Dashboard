@@ -43,18 +43,18 @@ const Login = () => {
   }
 
   return (
-    <div className='min-h-screen w-full bg-main-gray flex flex-col items-center justify-center'>
+    <div className='min-h-screen bg-main-gray flex flex-col items-center justify-center w-full'>
       <h1 className='text-[30px] text-main-blue font-bold mb-[30px]'>
         Dashboard
       </h1>
-      <div className='flex flex-col px-5 py-10 bg-white w-[400px] rounded-lg '>
+      <div className='flex flex-col px-4 py-10 bg-white rounded-lg min-w-[350px] smm:min-w-[360px]  sm:min-w-[350px]  lg:min-w-[380px]'>
         <h1 className='text-[20px] font-bold text-main-black text-center mb-[40px]'>
           Sign In
         </h1>
 
         <form className='flex flex-col gap-3'>
           <div className='flex flex-col w-full gap-1'>
-            <p className='text-[15px] text-dark-two'>Username</p>
+            <p className='text-[15px] text-dark-two '>Username</p>
             <input
               type='text'
               placeholder='Enter Username'
@@ -90,11 +90,11 @@ const Login = () => {
         <div className='w-full mt-[25px] flex gap-3'>
           <p className='text-[12px] text-dark-two'>
             {' '}
-            <span className='font-bold'>username:</span> admin
+            <span className='font-bold smm:text-[12px]'>username:</span> admin
           </p>
           <p className='text-[12px] text-dark-two'>
             {' '}
-            <span className='font-bold'>password:</span> admin
+            <span className='font-bold smm:text-[12px]'>password:</span> admin
           </p>
         </div>
       </div>
