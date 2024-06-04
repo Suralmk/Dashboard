@@ -39,7 +39,7 @@ const AreaChart = ({ labels, data, title }) => {
 
   const options = {
     responsive: true,
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
     title: {
       display: true,
       text: title
@@ -66,7 +66,7 @@ const AreaChart = ({ labels, data, title }) => {
   }
 
   return (
-    <div>
+    <div style={{ height: 400, width: '100%' }}>
       <Line data={chartdata} options={options} />
     </div>
   )
