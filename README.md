@@ -1,6 +1,6 @@
 
 <div align="center" width="100%" height="auto" > 
-  <img height="300" src="https://github.com/Suralmk/Dashboard/blob/master/src/assets/image.pngg"  />
+  <img height="300" src="https://github.com/Suralmk/Dashboard/blob/master/src/assets/image.png"  />
 </div>
 
 # Data Visualization Admin Dashboard
