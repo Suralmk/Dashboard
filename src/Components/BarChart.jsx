@@ -22,6 +22,7 @@ const BarChart = ({ labels, data, label }) => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       legend: {
         position: 'top'
@@ -49,7 +50,7 @@ const BarChart = ({ labels, data, label }) => {
     }
   }
   return (
-    <div>
+    <div style={{ height: 200, width: '100%' }}>
       <Bar data={chartData} options={options} />
     </div>
   )

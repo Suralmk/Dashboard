@@ -21,7 +21,7 @@ const LineChart = ({ labels, title, data, label }) => {
 
   const options = {
     responsive: true,
-    maintainAspectRatio: true,
+    maintainAspectRatio: false,
     title: {
       display: true,
       text: title
@@ -48,7 +48,7 @@ const LineChart = ({ labels, title, data, label }) => {
   }
 
   return (
-    <div>
+    <div style={{ height: 200, width: '100%' }}>
       <Line data={chartdata} options={options} />
     </div>
   )
